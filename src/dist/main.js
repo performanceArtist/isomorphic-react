@@ -4508,7 +4508,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4590,7 +4590,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /*!***********************************************************************!*\
   !*** ./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js ***!
   \***********************************************************************/
-/*! exports provided: CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel, default */
+/*! exports provided: default, CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4775,362 +4775,362 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 
 /***/ }),
 
-/***/ "./server/src/client sync recursive \\.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$":
-/*!***************************************************************************!*\
-  !*** ./server/src/client sync \.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$ ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var map = {\n\t\"./layout.scss\": \"./server/src/client/layout.scss\",\n\t\"./layout/Footer/footer.scss\": \"./server/src/client/layout/Footer/footer.scss\",\n\t\"./layout/Header/header.scss\": \"./server/src/client/layout/Header/header.scss\",\n\t\"./layout/Navigation/icons/history.png\": \"./server/src/client/layout/Navigation/icons/history.png\",\n\t\"./layout/Navigation/icons/home.png\": \"./server/src/client/layout/Navigation/icons/home.png\",\n\t\"./layout/Navigation/icons/measurements.png\": \"./server/src/client/layout/Navigation/icons/measurements.png\",\n\t\"./layout/Navigation/icons/options.png\": \"./server/src/client/layout/Navigation/icons/options.png\",\n\t\"./layout/Navigation/icons/report.png\": \"./server/src/client/layout/Navigation/icons/report.png\",\n\t\"./layout/Navigation/icons/task.png\": \"./server/src/client/layout/Navigation/icons/task.png\",\n\t\"./layout/Navigation/icons/truck.png\": \"./server/src/client/layout/Navigation/icons/truck.png\",\n\t\"./layout/Navigation/navigation.scss\": \"./server/src/client/layout/Navigation/navigation.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./server/src/client sync recursive \\\\.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$\";\n\n//# sourceURL=webpack:///./server/src/client_sync_\\.(css%7Cscss%7Cjpg%7Cpng%7Csvg%7Cpng%7Cico%7Cxml%7Cmp4%7C)$?");
-
-/***/ }),
-
-/***/ "./server/src/client/app.tsx":
-/*!***********************************!*\
-  !*** ./server/src/client/app.tsx ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _layout_Header_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/Header/Header */ \"./server/src/client/layout/Header/Header.tsx\");\n/* harmony import */ var _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout/Navigation/Navigation */ \"./server/src/client/layout/Navigation/Navigation.tsx\");\n/* harmony import */ var _layout_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layout/Footer/Footer */ \"./server/src/client/layout/Footer/Footer.tsx\");\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes */ \"./server/src/client/routes.tsx\");\n\n\n\n\n\n\n\nvar App = function App() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"container\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_layout_Header_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"main\", {\n    className: \"app\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"app__navigation\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Navigation\"], {\n    links: _routes__WEBPACK_IMPORTED_MODULE_5__[\"default\"].map(function (_ref) {\n      var path = _ref.path,\n          title = _ref.title,\n          icon = _ref.icon;\n      return {\n        url: path,\n        title: title,\n        icon: icon\n      };\n    })\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"app__content\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Switch\"], null, _routes__WEBPACK_IMPORTED_MODULE_5__[\"default\"].map(function (_ref2, index) {\n    var path = _ref2.path,\n        exact = _ref2.exact,\n        component = _ref2.component;\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Route\"], {\n      key: \"route-\".concat(index),\n      exact: exact,\n      path: path,\n      component: component\n    });\n  })))), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_layout_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./server/src/client/app.tsx?");
-
-/***/ }),
-
-/***/ "./server/src/client/components/TSTest/TSTest.tsx":
-/*!********************************************************!*\
-  !*** ./server/src/client/components/TSTest/TSTest.tsx ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _redux_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./redux/actions */ \"./server/src/client/components/TSTest/redux/actions.ts\");\n\n\n\n\nvar TSTest = function TSTest(_ref) {\n  var ownProp = _ref.ownProp,\n      reduxCounter = _ref.reduxCounter,\n      reduxIncrement = _ref.reduxIncrement;\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"test\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h2\", null, \"\".concat(ownProp, \": \").concat(reduxCounter)), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"button\", {\n    onClick: function onClick() {\n      return reduxIncrement();\n    }\n  }, \"INCREMENT\"));\n};\n\nvar mapState = function mapState(_ref2) {\n  var test = _ref2.test;\n  return {\n    reduxCounter: test.counter\n  };\n};\n\nvar mapDispatch = {\n  reduxIncrement: _redux_actions__WEBPACK_IMPORTED_MODULE_2__[\"reduxIncrement\"]\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__[\"connect\"])(mapState, mapDispatch)(TSTest));\n\n//# sourceURL=webpack:///./server/src/client/components/TSTest/TSTest.tsx?");
-
-/***/ }),
-
-/***/ "./server/src/client/components/TSTest/redux/actions.ts":
-/*!**************************************************************!*\
-  !*** ./server/src/client/components/TSTest/redux/actions.ts ***!
-  \**************************************************************/
-/*! exports provided: INCREMENT, reduxIncrement */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"INCREMENT\", function() { return INCREMENT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"reduxIncrement\", function() { return reduxIncrement; });\nvar INCREMENT = 'INCREMENT';\nvar reduxIncrement = function reduxIncrement() {\n  return {\n    type: INCREMENT\n  };\n};\n\n//# sourceURL=webpack:///./server/src/client/components/TSTest/redux/actions.ts?");
-
-/***/ }),
-
-/***/ "./server/src/client/components/TSTest/redux/reducer.ts":
-/*!**************************************************************!*\
-  !*** ./server/src/client/components/TSTest/redux/reducer.ts ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./actions */ \"./server/src/client/components/TSTest/redux/actions.ts\");\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\nvar initialState = {\n  counter: 0\n};\n\nvar reducer = function reducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n\n  var _ref = arguments.length > 1 ? arguments[1] : undefined,\n      type = _ref.type,\n      payload = _ref.payload;\n\n  switch (type) {\n    case _actions__WEBPACK_IMPORTED_MODULE_0__[\"INCREMENT\"]:\n      return _objectSpread({}, state, {\n        counter: state.counter + 1\n      });\n\n    default:\n      return state;\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (reducer);\n\n//# sourceURL=webpack:///./server/src/client/components/TSTest/redux/reducer.ts?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout.scss":
-/*!***************************************!*\
-  !*** ./server/src/client/layout.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./server/src/client/layout.scss?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Footer/Footer.tsx":
-/*!****************************************************!*\
-  !*** ./server/src/client/layout/Footer/Footer.tsx ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Footer = function Footer() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"footer\", {\n    className: \"footer\"\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Footer);\n\n//# sourceURL=webpack:///./server/src/client/layout/Footer/Footer.tsx?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Footer/footer.scss":
-/*!*****************************************************!*\
-  !*** ./server/src/client/layout/Footer/footer.scss ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./server/src/client/layout/Footer/footer.scss?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Header/Header.tsx":
-/*!****************************************************!*\
-  !*** ./server/src/client/layout/Header/Header.tsx ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Header = function Header(_ref) {\n  var _ref$title = _ref.title,\n      title = _ref$title === void 0 ? 'Title' : _ref$title;\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"header\", {\n    className: \"header\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", {\n    className: \"header__title\"\n  }, title));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./server/src/client/layout/Header/Header.tsx?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Header/header.scss":
-/*!*****************************************************!*\
-  !*** ./server/src/client/layout/Header/header.scss ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./server/src/client/layout/Header/header.scss?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/Navigation.tsx":
-/*!************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/Navigation.tsx ***!
-  \************************************************************/
-/*! exports provided: Navigation, Icon */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Navigation\", function() { return Navigation; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Icon\", function() { return Icon; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\nvar Icon;\n\n(function (Icon) {\n  Icon[\"NONE\"] = \"\";\n  Icon[\"HOME\"] = \"images/home.png\";\n  Icon[\"GRAPH\"] = \"images/measurements.png\";\n  Icon[\"HISTORY\"] = \"images/history.png\";\n  Icon[\"OPTIONS\"] = \"images/options.png\";\n  Icon[\"DIAGNOSTICS\"] = \"images/diagnostics.png\";\n  Icon[\"TRUCK\"] = \"images/truck.png\";\n  Icon[\"REPORT\"] = \"images/report.png\";\n  Icon[\"TASK\"] = \"images/task.png\";\n})(Icon || (Icon = {}));\n\nvar Navigation = function Navigation(_ref) {\n  var links = _ref.links;\n  var elements = links.map(function (_ref2) {\n    var url = _ref2.url,\n        _ref2$icon = _ref2.icon,\n        icon = _ref2$icon === void 0 ? Icon.NONE : _ref2$icon,\n        _ref2$title = _ref2.title,\n        title = _ref2$title === void 0 ? '' : _ref2$title;\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      exact: true,\n      key: Math.random(),\n      className: \"navigation__link\",\n      to: url,\n      activeClassName: \"navigation__link navigation__link_selected\"\n    }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"span\", {\n      className: \"navigation__icon\",\n      style: {\n        backgroundImage: \"url(\".concat(icon, \")\"),\n        display: icon === Icon.NONE ? 'none' : ''\n      }\n    }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"span\", {\n      className: \"navigation__title\"\n    }, title));\n  });\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"nav\", {\n    className: \"navigation\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"navigation__wrapper\"\n  }, elements));\n};\n\n\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/Navigation.tsx?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/icons/history.png":
-/*!***************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/icons/history.png ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"images/history.png\";\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/icons/history.png?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/icons/home.png":
-/*!************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/icons/home.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"images/home.png\";\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/icons/home.png?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/icons/measurements.png":
+/***/ "./src/client sync recursive \\.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$":
 /*!********************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/icons/measurements.png ***!
+  !*** ./src/client sync \.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$ ***!
   \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"images/measurements.png\";\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/icons/measurements.png?");
+eval("var map = {\n\t\"./layout.scss\": \"./src/client/layout.scss\",\n\t\"./layout/Footer/footer.scss\": \"./src/client/layout/Footer/footer.scss\",\n\t\"./layout/Header/header.scss\": \"./src/client/layout/Header/header.scss\",\n\t\"./layout/Navigation/icons/history.png\": \"./src/client/layout/Navigation/icons/history.png\",\n\t\"./layout/Navigation/icons/home.png\": \"./src/client/layout/Navigation/icons/home.png\",\n\t\"./layout/Navigation/icons/measurements.png\": \"./src/client/layout/Navigation/icons/measurements.png\",\n\t\"./layout/Navigation/icons/options.png\": \"./src/client/layout/Navigation/icons/options.png\",\n\t\"./layout/Navigation/icons/report.png\": \"./src/client/layout/Navigation/icons/report.png\",\n\t\"./layout/Navigation/icons/task.png\": \"./src/client/layout/Navigation/icons/task.png\",\n\t\"./layout/Navigation/icons/truck.png\": \"./src/client/layout/Navigation/icons/truck.png\",\n\t\"./layout/Navigation/navigation.scss\": \"./src/client/layout/Navigation/navigation.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/client sync recursive \\\\.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$\";\n\n//# sourceURL=webpack:///./src/client_sync_\\.(css%7Cscss%7Cjpg%7Cpng%7Csvg%7Cpng%7Cico%7Cxml%7Cmp4%7C)$?");
 
 /***/ }),
 
-/***/ "./server/src/client/layout/Navigation/icons/options.png":
-/*!***************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/icons/options.png ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"images/options.png\";\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/icons/options.png?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/icons/report.png":
-/*!**************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/icons/report.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"images/report.png\";\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/icons/report.png?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/icons/task.png":
-/*!************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/icons/task.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"images/task.png\";\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/icons/task.png?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/icons/truck.png":
-/*!*************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/icons/truck.png ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"images/truck.png\";\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/icons/truck.png?");
-
-/***/ }),
-
-/***/ "./server/src/client/layout/Navigation/navigation.scss":
-/*!*************************************************************!*\
-  !*** ./server/src/client/layout/Navigation/navigation.scss ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./server/src/client/layout/Navigation/navigation.scss?");
-
-/***/ }),
-
-/***/ "./server/src/client/main.tsx":
-/*!************************************!*\
-  !*** ./server/src/client/main.tsx ***!
-  \************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app */ \"./server/src/client/app.tsx\");\n/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ \"./server/src/client/store.tsx\");\n\n\n\n\n\n\nvar preloadedState = window.__PRELOADED_STATE__;\ndelete window.__PRELOADED_STATE__;\nvar store = Object(_store__WEBPACK_IMPORTED_MODULE_5__[\"default\"])({\n  initialState: preloadedState,\n  browser: true\n});\nvar jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__[\"Provider\"], {\n  store: store\n}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__[\"BrowserRouter\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null)));\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.hydrate(jsx, document.querySelector('.wrapper'));\n\nfunction importAll(resolve) {\n  resolve.keys().forEach(resolve);\n}\n\nimportAll(__webpack_require__(\"./server/src/client sync recursive \\\\.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$\"));\n\n//# sourceURL=webpack:///./server/src/client/main.tsx?");
-
-/***/ }),
-
-/***/ "./server/src/client/redux/api/actions.ts":
-/*!************************************************!*\
-  !*** ./server/src/client/redux/api/actions.ts ***!
-  \************************************************/
-/*! exports provided: SERVER, getRequest */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SERVER\", function() { return SERVER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getRequest\", function() { return getRequest; });\nvar SERVER = {\n  GET: {\n    REQUEST: 'SERVER.GET.REQUEST',\n    SUCCESS: 'SERVER.GET.SUCCESS',\n    FAILURE: 'SERVER.GET.FAILURE'\n  }\n};\nvar getRequest = function getRequest() {\n  return {\n    type: SERVER.GET.REQUEST\n  };\n};\n\n//# sourceURL=webpack:///./server/src/client/redux/api/actions.ts?");
-
-/***/ }),
-
-/***/ "./server/src/client/redux/api/reducer.ts":
-/*!************************************************!*\
-  !*** ./server/src/client/redux/api/reducer.ts ***!
-  \************************************************/
+/***/ "./src/client/app.tsx":
+/*!****************************!*\
+  !*** ./src/client/app.tsx ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return reducer; });\n/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./actions */ \"./server/src/client/redux/api/actions.ts\");\n\nvar initialState = {\n  response: null,\n  fetching: true\n};\nfunction reducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n\n  var _ref = arguments.length > 1 ? arguments[1] : undefined,\n      type = _ref.type,\n      payload = _ref.payload;\n\n  switch (type) {\n    case _actions__WEBPACK_IMPORTED_MODULE_0__[\"SERVER\"].GET.SUCCESS:\n      return {\n        fetching: false,\n        response: payload\n      };\n\n    default:\n      return state;\n  }\n}\n\n//# sourceURL=webpack:///./server/src/client/redux/api/reducer.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _layout_Header_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/Header/Header */ \"./src/client/layout/Header/Header.tsx\");\n/* harmony import */ var _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout/Navigation/Navigation */ \"./src/client/layout/Navigation/Navigation.tsx\");\n/* harmony import */ var _layout_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layout/Footer/Footer */ \"./src/client/layout/Footer/Footer.tsx\");\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes */ \"./src/client/routes.tsx\");\n\n\n\n\n\n\n\nvar App = function App() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"container\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_layout_Header_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"main\", {\n    className: \"app\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"app__navigation\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Navigation\"], {\n    links: _routes__WEBPACK_IMPORTED_MODULE_5__[\"default\"].map(function (_ref) {\n      var path = _ref.path,\n          title = _ref.title,\n          icon = _ref.icon;\n      return {\n        url: path,\n        title: title,\n        icon: icon\n      };\n    })\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"app__content\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Switch\"], null, _routes__WEBPACK_IMPORTED_MODULE_5__[\"default\"].map(function (_ref2, index) {\n    var path = _ref2.path,\n        exact = _ref2.exact,\n        component = _ref2.component;\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Route\"], {\n      key: \"route-\".concat(index),\n      exact: exact,\n      path: path,\n      component: component\n    });\n  })))), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_layout_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./src/client/app.tsx?");
 
 /***/ }),
 
-/***/ "./server/src/client/redux/api/saga.ts":
+/***/ "./src/client/components/TSTest/TSTest.tsx":
+/*!*************************************************!*\
+  !*** ./src/client/components/TSTest/TSTest.tsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _redux_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./redux/actions */ \"./src/client/components/TSTest/redux/actions.ts\");\n\n\n\n\nvar TSTest = function TSTest(_ref) {\n  var ownProp = _ref.ownProp,\n      reduxCounter = _ref.reduxCounter,\n      reduxIncrement = _ref.reduxIncrement;\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"test\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h2\", null, \"\".concat(ownProp, \": \").concat(reduxCounter)), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"button\", {\n    onClick: function onClick() {\n      return reduxIncrement();\n    }\n  }, \"INCREMENT\"));\n};\n\nvar mapState = function mapState(_ref2) {\n  var test = _ref2.test;\n  return {\n    reduxCounter: test.counter\n  };\n};\n\nvar mapDispatch = {\n  reduxIncrement: _redux_actions__WEBPACK_IMPORTED_MODULE_2__[\"reduxIncrement\"]\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__[\"connect\"])(mapState, mapDispatch)(TSTest));\n\n//# sourceURL=webpack:///./src/client/components/TSTest/TSTest.tsx?");
+
+/***/ }),
+
+/***/ "./src/client/components/TSTest/redux/actions.ts":
+/*!*******************************************************!*\
+  !*** ./src/client/components/TSTest/redux/actions.ts ***!
+  \*******************************************************/
+/*! exports provided: INCREMENT, reduxIncrement */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"INCREMENT\", function() { return INCREMENT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"reduxIncrement\", function() { return reduxIncrement; });\nvar INCREMENT = 'INCREMENT';\nvar reduxIncrement = function reduxIncrement() {\n  return {\n    type: INCREMENT\n  };\n};\n\n//# sourceURL=webpack:///./src/client/components/TSTest/redux/actions.ts?");
+
+/***/ }),
+
+/***/ "./src/client/components/TSTest/redux/reducer.ts":
+/*!*******************************************************!*\
+  !*** ./src/client/components/TSTest/redux/reducer.ts ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./actions */ \"./src/client/components/TSTest/redux/actions.ts\");\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\nvar initialState = {\n  counter: 0\n};\n\nvar reducer = function reducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n\n  var _ref = arguments.length > 1 ? arguments[1] : undefined,\n      type = _ref.type,\n      payload = _ref.payload;\n\n  switch (type) {\n    case _actions__WEBPACK_IMPORTED_MODULE_0__[\"INCREMENT\"]:\n      return _objectSpread({}, state, {\n        counter: state.counter + 1\n      });\n\n    default:\n      return state;\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (reducer);\n\n//# sourceURL=webpack:///./src/client/components/TSTest/redux/reducer.ts?");
+
+/***/ }),
+
+/***/ "./src/client/layout.scss":
+/*!********************************!*\
+  !*** ./src/client/layout.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/client/layout.scss?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Footer/Footer.tsx":
 /*!*********************************************!*\
-  !*** ./server/src/client/redux/api/saga.ts ***!
+  !*** ./src/client/layout/Footer/Footer.tsx ***!
   \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return createWatcher; });\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./actions */ \"./server/src/client/redux/api/actions.ts\");\nvar _marked =\n/*#__PURE__*/\nregeneratorRuntime.mark(createWorker),\n    _marked2 =\n/*#__PURE__*/\nregeneratorRuntime.mark(createWatcher);\n\n\n\n\n\nfunction createWorker(action) {\n  var postResult, status;\n  return regeneratorRuntime.wrap(function createWorker$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.prev = 0;\n          _context.next = 3;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(axios__WEBPACK_IMPORTED_MODULE_1___default.a.get, 'api/test');\n\n        case 3:\n          postResult = _context.sent;\n          status = postResult.data.status;\n\n          if (!(status !== 'ok')) {\n            _context.next = 8;\n            break;\n          }\n\n          console.error(postResult);\n          throw new Error(\"Request failed\");\n\n        case 8:\n          _context.next = 10;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])({\n            type: _actions__WEBPACK_IMPORTED_MODULE_2__[\"SERVER\"].GET.SUCCESS,\n            payload: postResult.data.message\n          });\n\n        case 10:\n          _context.next = 17;\n          break;\n\n        case 12:\n          _context.prev = 12;\n          _context.t0 = _context[\"catch\"](0);\n          console.log(_context.t0);\n          _context.next = 17;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])({\n            type: _actions__WEBPACK_IMPORTED_MODULE_2__[\"SERVER\"].GET.FAILURE,\n            error: _context.t0\n          });\n\n        case 17:\n        case \"end\":\n          return _context.stop();\n      }\n    }\n  }, _marked, null, [[0, 12]]);\n}\n\nfunction createWatcher() {\n  return regeneratorRuntime.wrap(function createWatcher$(_context2) {\n    while (1) {\n      switch (_context2.prev = _context2.next) {\n        case 0:\n          _context2.next = 2;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_actions__WEBPACK_IMPORTED_MODULE_2__[\"SERVER\"].GET.REQUEST, createWorker);\n\n        case 2:\n        case \"end\":\n          return _context2.stop();\n      }\n    }\n  }, _marked2);\n}\n\n//# sourceURL=webpack:///./server/src/client/redux/api/saga.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Footer = function Footer() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"footer\", {\n    className: \"footer\"\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Footer);\n\n//# sourceURL=webpack:///./src/client/layout/Footer/Footer.tsx?");
 
 /***/ }),
 
-/***/ "./server/src/client/redux/reducer.ts":
-/*!********************************************!*\
-  !*** ./server/src/client/redux/reducer.ts ***!
-  \********************************************/
+/***/ "./src/client/layout/Footer/footer.scss":
+/*!**********************************************!*\
+  !*** ./src/client/layout/Footer/footer.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/client/layout/Footer/footer.scss?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Header/Header.tsx":
+/*!*********************************************!*\
+  !*** ./src/client/layout/Header/Header.tsx ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _components_TSTest_redux_reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/TSTest/redux/reducer */ \"./server/src/client/components/TSTest/redux/reducer.ts\");\n/* harmony import */ var _api_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api/reducer */ \"./server/src/client/redux/api/reducer.ts\");\n\n\n\nvar rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  test: _components_TSTest_redux_reducer__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  request: _api_reducer__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n});\n/* harmony default export */ __webpack_exports__[\"default\"] = (rootReducer);\n\n//# sourceURL=webpack:///./server/src/client/redux/reducer.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Header = function Header(_ref) {\n  var _ref$title = _ref.title,\n      title = _ref$title === void 0 ? 'Title' : _ref$title;\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"header\", {\n    className: \"header\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", {\n    className: \"header__title\"\n  }, title));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./src/client/layout/Header/Header.tsx?");
 
 /***/ }),
 
-/***/ "./server/src/client/redux/saga.ts":
+/***/ "./src/client/layout/Header/header.scss":
+/*!**********************************************!*\
+  !*** ./src/client/layout/Header/header.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/client/layout/Header/header.scss?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/Navigation.tsx":
+/*!*****************************************************!*\
+  !*** ./src/client/layout/Navigation/Navigation.tsx ***!
+  \*****************************************************/
+/*! exports provided: Navigation, Icon */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Navigation\", function() { return Navigation; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Icon\", function() { return Icon; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\nvar Icon;\n\n(function (Icon) {\n  Icon[\"NONE\"] = \"\";\n  Icon[\"HOME\"] = \"images/home.png\";\n  Icon[\"GRAPH\"] = \"images/measurements.png\";\n  Icon[\"HISTORY\"] = \"images/history.png\";\n  Icon[\"OPTIONS\"] = \"images/options.png\";\n  Icon[\"DIAGNOSTICS\"] = \"images/diagnostics.png\";\n  Icon[\"TRUCK\"] = \"images/truck.png\";\n  Icon[\"REPORT\"] = \"images/report.png\";\n  Icon[\"TASK\"] = \"images/task.png\";\n})(Icon || (Icon = {}));\n\nvar Navigation = function Navigation(_ref) {\n  var links = _ref.links;\n  var elements = links.map(function (_ref2) {\n    var url = _ref2.url,\n        _ref2$icon = _ref2.icon,\n        icon = _ref2$icon === void 0 ? Icon.NONE : _ref2$icon,\n        _ref2$title = _ref2.title,\n        title = _ref2$title === void 0 ? '' : _ref2$title;\n    return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      exact: true,\n      key: Math.random(),\n      className: \"navigation__link\",\n      to: url,\n      activeClassName: \"navigation__link navigation__link_selected\"\n    }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"span\", {\n      className: \"navigation__icon\",\n      style: {\n        backgroundImage: \"url(\".concat(icon, \")\"),\n        display: icon === Icon.NONE ? 'none' : ''\n      }\n    }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"span\", {\n      className: \"navigation__title\"\n    }, title));\n  });\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"nav\", {\n    className: \"navigation\"\n  }, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", {\n    className: \"navigation__wrapper\"\n  }, elements));\n};\n\n\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/Navigation.tsx?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/icons/history.png":
+/*!********************************************************!*\
+  !*** ./src/client/layout/Navigation/icons/history.png ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/history.png\";\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/icons/history.png?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/icons/home.png":
+/*!*****************************************************!*\
+  !*** ./src/client/layout/Navigation/icons/home.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/home.png\";\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/icons/home.png?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/icons/measurements.png":
+/*!*************************************************************!*\
+  !*** ./src/client/layout/Navigation/icons/measurements.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/measurements.png\";\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/icons/measurements.png?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/icons/options.png":
+/*!********************************************************!*\
+  !*** ./src/client/layout/Navigation/icons/options.png ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/options.png\";\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/icons/options.png?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/icons/report.png":
+/*!*******************************************************!*\
+  !*** ./src/client/layout/Navigation/icons/report.png ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/report.png\";\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/icons/report.png?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/icons/task.png":
+/*!*****************************************************!*\
+  !*** ./src/client/layout/Navigation/icons/task.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/task.png\";\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/icons/task.png?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/icons/truck.png":
+/*!******************************************************!*\
+  !*** ./src/client/layout/Navigation/icons/truck.png ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/truck.png\";\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/icons/truck.png?");
+
+/***/ }),
+
+/***/ "./src/client/layout/Navigation/navigation.scss":
+/*!******************************************************!*\
+  !*** ./src/client/layout/Navigation/navigation.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/client/layout/Navigation/navigation.scss?");
+
+/***/ }),
+
+/***/ "./src/client/main.tsx":
+/*!*****************************!*\
+  !*** ./src/client/main.tsx ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app */ \"./src/client/app.tsx\");\n/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ \"./src/client/store.tsx\");\n\n\n\n\n\n\nvar preloadedState = window.__PRELOADED_STATE__;\ndelete window.__PRELOADED_STATE__;\nvar store = Object(_store__WEBPACK_IMPORTED_MODULE_5__[\"default\"])({\n  initialState: preloadedState,\n  browser: true\n});\nvar jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__[\"Provider\"], {\n  store: store\n}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__[\"BrowserRouter\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null)));\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.hydrate(jsx, document.querySelector('.wrapper'));\n\nfunction importAll(resolve) {\n  resolve.keys().forEach(resolve);\n}\n\nimportAll(__webpack_require__(\"./src/client sync recursive \\\\.(css|scss|jpg|png|svg|png|ico|xml|mp4|)$\"));\n\n//# sourceURL=webpack:///./src/client/main.tsx?");
+
+/***/ }),
+
+/***/ "./src/client/redux/api/actions.ts":
 /*!*****************************************!*\
-  !*** ./server/src/client/redux/saga.ts ***!
+  !*** ./src/client/redux/api/actions.ts ***!
+  \*****************************************/
+/*! exports provided: SERVER, getRequest */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SERVER\", function() { return SERVER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getRequest\", function() { return getRequest; });\nvar SERVER = {\n  GET: {\n    REQUEST: 'SERVER.GET.REQUEST',\n    SUCCESS: 'SERVER.GET.SUCCESS',\n    FAILURE: 'SERVER.GET.FAILURE'\n  }\n};\nvar getRequest = function getRequest() {\n  return {\n    type: SERVER.GET.REQUEST\n  };\n};\n\n//# sourceURL=webpack:///./src/client/redux/api/actions.ts?");
+
+/***/ }),
+
+/***/ "./src/client/redux/api/reducer.ts":
+/*!*****************************************!*\
+  !*** ./src/client/redux/api/reducer.ts ***!
   \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return rootSaga; });\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js\");\n/* harmony import */ var _api_saga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api/saga */ \"./server/src/client/redux/api/saga.ts\");\nvar _marked =\n/*#__PURE__*/\nregeneratorRuntime.mark(rootSaga);\n\n\n\nfunction rootSaga() {\n  return regeneratorRuntime.wrap(function rootSaga$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.next = 2;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"all\"])([Object(_api_saga__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()]);\n\n        case 2:\n        case \"end\":\n          return _context.stop();\n      }\n    }\n  }, _marked);\n}\n\n//# sourceURL=webpack:///./server/src/client/redux/saga.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return reducer; });\n/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./actions */ \"./src/client/redux/api/actions.ts\");\n\nvar initialState = {\n  response: null,\n  fetching: true\n};\nfunction reducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n\n  var _ref = arguments.length > 1 ? arguments[1] : undefined,\n      type = _ref.type,\n      payload = _ref.payload;\n\n  switch (type) {\n    case _actions__WEBPACK_IMPORTED_MODULE_0__[\"SERVER\"].GET.SUCCESS:\n      return {\n        fetching: false,\n        response: payload\n      };\n\n    default:\n      return state;\n  }\n}\n\n//# sourceURL=webpack:///./src/client/redux/api/reducer.ts?");
 
 /***/ }),
 
-/***/ "./server/src/client/routes.tsx":
+/***/ "./src/client/redux/api/saga.ts":
 /*!**************************************!*\
-  !*** ./server/src/client/routes.tsx ***!
+  !*** ./src/client/redux/api/saga.ts ***!
   \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_Index_Index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/Index/Index */ \"./server/src/client/views/Index/Index.tsx\");\n/* harmony import */ var _views_About_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/About/About */ \"./server/src/client/views/About/About.tsx\");\n/* harmony import */ var _views_ApiCall_ApiCall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/ApiCall/ApiCall */ \"./server/src/client/views/ApiCall/ApiCall.tsx\");\n/* harmony import */ var _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout/Navigation/Navigation */ \"./server/src/client/layout/Navigation/Navigation.tsx\");\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ([{\n  path: '/',\n  title: 'Homepage',\n  icon: _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Icon\"].HOME,\n  component: _views_Index_Index__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  exact: true\n}, {\n  path: '/api',\n  title: 'API',\n  icon: _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Icon\"].REPORT,\n  component: _views_ApiCall_ApiCall__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  exact: true\n}, {\n  path: '/about',\n  title: 'About',\n  icon: _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Icon\"].HISTORY,\n  component: _views_About_About__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  exact: true\n}]);\n\n//# sourceURL=webpack:///./server/src/client/routes.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return createWatcher; });\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./actions */ \"./src/client/redux/api/actions.ts\");\nvar _marked =\n/*#__PURE__*/\nregeneratorRuntime.mark(createWorker),\n    _marked2 =\n/*#__PURE__*/\nregeneratorRuntime.mark(createWatcher);\n\n\n\n\n\nfunction createWorker(action) {\n  var postResult, status;\n  return regeneratorRuntime.wrap(function createWorker$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.prev = 0;\n          _context.next = 3;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(axios__WEBPACK_IMPORTED_MODULE_1___default.a.get, 'api/test');\n\n        case 3:\n          postResult = _context.sent;\n          status = postResult.data.status;\n\n          if (!(status !== 'ok')) {\n            _context.next = 8;\n            break;\n          }\n\n          console.error(postResult);\n          throw new Error(\"Request failed\");\n\n        case 8:\n          _context.next = 10;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])({\n            type: _actions__WEBPACK_IMPORTED_MODULE_2__[\"SERVER\"].GET.SUCCESS,\n            payload: postResult.data.message\n          });\n\n        case 10:\n          _context.next = 17;\n          break;\n\n        case 12:\n          _context.prev = 12;\n          _context.t0 = _context[\"catch\"](0);\n          console.log(_context.t0);\n          _context.next = 17;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])({\n            type: _actions__WEBPACK_IMPORTED_MODULE_2__[\"SERVER\"].GET.FAILURE,\n            error: _context.t0\n          });\n\n        case 17:\n        case \"end\":\n          return _context.stop();\n      }\n    }\n  }, _marked, null, [[0, 12]]);\n}\n\nfunction createWatcher() {\n  return regeneratorRuntime.wrap(function createWatcher$(_context2) {\n    while (1) {\n      switch (_context2.prev = _context2.next) {\n        case 0:\n          _context2.next = 2;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_actions__WEBPACK_IMPORTED_MODULE_2__[\"SERVER\"].GET.REQUEST, createWorker);\n\n        case 2:\n        case \"end\":\n          return _context2.stop();\n      }\n    }\n  }, _marked2);\n}\n\n//# sourceURL=webpack:///./src/client/redux/api/saga.ts?");
 
 /***/ }),
 
-/***/ "./server/src/client/store.tsx":
+/***/ "./src/client/redux/reducer.ts":
 /*!*************************************!*\
-  !*** ./server/src/client/store.tsx ***!
+  !*** ./src/client/redux/reducer.ts ***!
   \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-saga */ \"./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js\");\n/* harmony import */ var _redux_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./redux/reducer */ \"./server/src/client/redux/reducer.ts\");\n/* harmony import */ var _redux_saga__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./redux/saga */ \"./server/src/client/redux/saga.ts\");\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},\n      initialState = _ref.initialState,\n      _ref$browser = _ref.browser,\n      browser = _ref$browser === void 0 ? false : _ref$browser;\n\n  var comp;\n  var sagaMiddleware = Object(redux_saga__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n  if (browser) {\n    var composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || redux__WEBPACK_IMPORTED_MODULE_0__[\"compose\"];\n    comp = composeEnhancer(Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"applyMiddleware\"])(sagaMiddleware));\n  } else {\n    comp = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"applyMiddleware\"])(sagaMiddleware);\n  }\n\n  var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"createStore\"])(_redux_reducer__WEBPACK_IMPORTED_MODULE_2__[\"default\"], initialState, comp);\n  sagaMiddleware.run(_redux_saga__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\n  return store;\n});\n\n//# sourceURL=webpack:///./server/src/client/store.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _components_TSTest_redux_reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/TSTest/redux/reducer */ \"./src/client/components/TSTest/redux/reducer.ts\");\n/* harmony import */ var _api_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api/reducer */ \"./src/client/redux/api/reducer.ts\");\n\n\n\nvar rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  test: _components_TSTest_redux_reducer__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  request: _api_reducer__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n});\n/* harmony default export */ __webpack_exports__[\"default\"] = (rootReducer);\n\n//# sourceURL=webpack:///./src/client/redux/reducer.ts?");
 
 /***/ }),
 
-/***/ "./server/src/client/views/About/About.tsx":
-/*!*************************************************!*\
-  !*** ./server/src/client/views/About/About.tsx ***!
-  \*************************************************/
+/***/ "./src/client/redux/saga.ts":
+/*!**********************************!*\
+  !*** ./src/client/redux/saga.ts ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ \"./node_modules/react-helmet/lib/Helmet.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar About = function About() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_helmet__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"title\", null, \"About\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"meta\", {\n    name: \"description\",\n    content: \"About stuff\"\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", null, \"About\"));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (About);\n\n//# sourceURL=webpack:///./server/src/client/views/About/About.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return rootSaga; });\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js\");\n/* harmony import */ var _api_saga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api/saga */ \"./src/client/redux/api/saga.ts\");\nvar _marked =\n/*#__PURE__*/\nregeneratorRuntime.mark(rootSaga);\n\n\n\nfunction rootSaga() {\n  return regeneratorRuntime.wrap(function rootSaga$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.next = 2;\n          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"all\"])([Object(_api_saga__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()]);\n\n        case 2:\n        case \"end\":\n          return _context.stop();\n      }\n    }\n  }, _marked);\n}\n\n//# sourceURL=webpack:///./src/client/redux/saga.ts?");
 
 /***/ }),
 
-/***/ "./server/src/client/views/ApiCall/ApiCall.tsx":
-/*!*****************************************************!*\
-  !*** ./server/src/client/views/ApiCall/ApiCall.tsx ***!
-  \*****************************************************/
+/***/ "./src/client/routes.tsx":
+/*!*******************************!*\
+  !*** ./src/client/routes.tsx ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ \"./node_modules/react-helmet/lib/Helmet.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _redux_api_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @redux/api/actions */ \"./server/src/client/redux/api/actions.ts\");\n\n\n\n\n\n\nvar ApiCall = function ApiCall(_ref) {\n  var request = _ref.request,\n      getRequest = _ref.getRequest;\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(function () {\n    if (request.response) return;\n    getRequest();\n  }, []);\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_helmet__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"title\", null, \"Test call\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"meta\", {\n    name: \"description\",\n    content: \"API\"\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", null, request.fetching ? 'Loading...' : request.response));\n};\n\nvar mapState = function mapState(_ref2) {\n  var request = _ref2.request;\n  return {\n    request: request\n  };\n};\n\nvar mapDispatch = {\n  getRequest: _redux_api_actions__WEBPACK_IMPORTED_MODULE_3__[\"getRequest\"]\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__[\"connect\"])(mapState, mapDispatch)(ApiCall));\n\n//# sourceURL=webpack:///./server/src/client/views/ApiCall/ApiCall.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_Index_Index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/Index/Index */ \"./src/client/views/Index/Index.tsx\");\n/* harmony import */ var _views_About_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/About/About */ \"./src/client/views/About/About.tsx\");\n/* harmony import */ var _views_ApiCall_ApiCall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/ApiCall/ApiCall */ \"./src/client/views/ApiCall/ApiCall.tsx\");\n/* harmony import */ var _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout/Navigation/Navigation */ \"./src/client/layout/Navigation/Navigation.tsx\");\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ([{\n  path: '/',\n  title: 'Homepage',\n  icon: _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Icon\"].HOME,\n  component: _views_Index_Index__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  exact: true\n}, {\n  path: '/api',\n  title: 'API',\n  icon: _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Icon\"].REPORT,\n  component: _views_ApiCall_ApiCall__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  exact: true\n}, {\n  path: '/about',\n  title: 'About',\n  icon: _layout_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"Icon\"].HISTORY,\n  component: _views_About_About__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  exact: true\n}]);\n\n//# sourceURL=webpack:///./src/client/routes.tsx?");
 
 /***/ }),
 
-/***/ "./server/src/client/views/Index/Index.tsx":
-/*!*************************************************!*\
-  !*** ./server/src/client/views/Index/Index.tsx ***!
-  \*************************************************/
+/***/ "./src/client/store.tsx":
+/*!******************************!*\
+  !*** ./src/client/store.tsx ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ \"./node_modules/react-helmet/lib/Helmet.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_TSTest_TSTest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/TSTest/TSTest */ \"./server/src/client/components/TSTest/TSTest.tsx\");\n\n\n\n\nvar Index = function Index() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_helmet__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"title\", null, \"Homepage\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"meta\", {\n    name: \"description\",\n    content: \"Hi there, stranger\"\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", null, \"Home\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_components_TSTest_TSTest__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    ownProp: \"Test\"\n  })));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Index);\n\n//# sourceURL=webpack:///./server/src/client/views/Index/Index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-saga */ \"./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js\");\n/* harmony import */ var _redux_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./redux/reducer */ \"./src/client/redux/reducer.ts\");\n/* harmony import */ var _redux_saga__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./redux/saga */ \"./src/client/redux/saga.ts\");\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},\n      initialState = _ref.initialState,\n      _ref$browser = _ref.browser,\n      browser = _ref$browser === void 0 ? false : _ref$browser;\n\n  var comp;\n  var sagaMiddleware = Object(redux_saga__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n  if (browser) {\n    var composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || redux__WEBPACK_IMPORTED_MODULE_0__[\"compose\"];\n    comp = composeEnhancer(Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"applyMiddleware\"])(sagaMiddleware));\n  } else {\n    comp = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"applyMiddleware\"])(sagaMiddleware);\n  }\n\n  var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"createStore\"])(_redux_reducer__WEBPACK_IMPORTED_MODULE_2__[\"default\"], initialState, comp);\n  sagaMiddleware.run(_redux_saga__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\n  return store;\n});\n\n//# sourceURL=webpack:///./src/client/store.tsx?");
+
+/***/ }),
+
+/***/ "./src/client/views/About/About.tsx":
+/*!******************************************!*\
+  !*** ./src/client/views/About/About.tsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ \"./node_modules/react-helmet/lib/Helmet.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar About = function About() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_helmet__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"title\", null, \"About\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"meta\", {\n    name: \"description\",\n    content: \"About stuff\"\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", null, \"About\"));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (About);\n\n//# sourceURL=webpack:///./src/client/views/About/About.tsx?");
+
+/***/ }),
+
+/***/ "./src/client/views/ApiCall/ApiCall.tsx":
+/*!**********************************************!*\
+  !*** ./src/client/views/ApiCall/ApiCall.tsx ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ \"./node_modules/react-helmet/lib/Helmet.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _redux_api_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @redux/api/actions */ \"./src/client/redux/api/actions.ts\");\n\n\n\n\n\n\nvar ApiCall = function ApiCall(_ref) {\n  var request = _ref.request,\n      getRequest = _ref.getRequest;\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(function () {\n    if (request.response) return;\n    getRequest();\n  }, []);\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_helmet__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"title\", null, \"Test call\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"meta\", {\n    name: \"description\",\n    content: \"API\"\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", null, request.fetching ? 'Loading...' : request.response));\n};\n\nvar mapState = function mapState(_ref2) {\n  var request = _ref2.request;\n  return {\n    request: request\n  };\n};\n\nvar mapDispatch = {\n  getRequest: _redux_api_actions__WEBPACK_IMPORTED_MODULE_3__[\"getRequest\"]\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__[\"connect\"])(mapState, mapDispatch)(ApiCall));\n\n//# sourceURL=webpack:///./src/client/views/ApiCall/ApiCall.tsx?");
+
+/***/ }),
+
+/***/ "./src/client/views/Index/Index.tsx":
+/*!******************************************!*\
+  !*** ./src/client/views/Index/Index.tsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ \"./node_modules/react-helmet/lib/Helmet.js\");\n/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_TSTest_TSTest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/TSTest/TSTest */ \"./src/client/components/TSTest/TSTest.tsx\");\n\n\n\n\nvar Index = function Index() {\n  return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_helmet__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"title\", null, \"Homepage\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"meta\", {\n    name: \"description\",\n    content: \"Hi there, stranger\"\n  })), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", null, \"Home\"), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_components_TSTest_TSTest__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    ownProp: \"Test\"\n  })));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Index);\n\n//# sourceURL=webpack:///./src/client/views/Index/Index.tsx?");
 
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************!*\
-  !*** multi @babel/polyfill ./server/src/client/main.tsx ***!
-  \**********************************************************/
+/*!***************************************************!*\
+  !*** multi @babel/polyfill ./src/client/main.tsx ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! @babel/polyfill */\"./node_modules/@babel/polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! E:\\Programming\\github\\repos\\react-isomorphic\\server\\src\\client\\main.tsx */\"./server/src/client/main.tsx\");\n\n\n//# sourceURL=webpack:///multi_@babel/polyfill_./server/src/client/main.tsx?");
+eval("__webpack_require__(/*! @babel/polyfill */\"./node_modules/@babel/polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! E:\\Programming\\github\\repos\\isomorphic-react\\src\\client\\main.tsx */\"./src/client/main.tsx\");\n\n\n//# sourceURL=webpack:///multi_@babel/polyfill_./src/client/main.tsx?");
 
 /***/ })
 

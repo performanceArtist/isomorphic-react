@@ -10,13 +10,13 @@
     "module": "commonjs",
     "target": "es6",
     "moduleResolution": "node",
-    "baseUrl": "./server",
+    "baseUrl": "./src",
     "paths": {
       "@redux/*": [
-        "src/client/redux/*"
+        "client/redux/*"
       ],
       "@components/*": [
-        "src/client/components/*"
+        "client/components/*"
       ],
     },
     "jsx": "react",

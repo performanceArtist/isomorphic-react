@@ -2,4 +2,4 @@ require('babel-register')({
   presets: ['@babel/env', '@babel/preset-typescript', '@babel/preset-react'],
   plugins: ['@babel/plugin-proposal-class-properties']
 });
-require('./server/src/server');
+require('./src/server');

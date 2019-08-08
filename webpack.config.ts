@@ -6,7 +6,7 @@ const config = {
   entry: {
     main: [
       '@babel/polyfill',
-      path.join(__dirname, 'server/src/client/main.tsx')
+      path.join(__dirname, 'src/client/main.tsx')
     ]
   },
 
@@ -14,12 +14,12 @@ const config = {
     modules: ['node_modules', 'client'],
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@redux': path.resolve(__dirname, 'server/src/client/redux'),
-      '@components': path.resolve(__dirname, 'server/src/client/components')
+      '@redux': path.resolve(__dirname, 'src/client/redux'),
+      '@components': path.resolve(__dirname, 'src/client/components')
     }
   },
   output: {
-    path: path.resolve(__dirname, 'server/src/dist'),
+    path: path.resolve(__dirname, 'src/dist'),
     filename: '[name].js'
   },
 

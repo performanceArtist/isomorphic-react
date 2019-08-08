@@ -2,14 +2,12 @@
   "name": "express-react",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.ts",
+  "main": "src/server.ts",
   "scripts": {
     "test": "jest",
-    "dev": "npm-run-all --parallel server:dev client:dev",
     "client:dev": "webpack --watch --mode=development --config webpack.config.ts",
-    "server:build": "tsc --project ./server",
     "server:dev": "ts-node-dev --respawn --transpileOnly -r tsconfig-paths/register index.ts",
-    "server:start": "node ./server/dist/server.js"
+    "server:start": "node ./src/dist/server.js"
   },
   "author": "",
   "license": "ISC",

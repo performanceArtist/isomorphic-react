@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 
-import TSTest from '../../components/TSTest/TSTest';
+import TSTest from '@components/TSTest/TSTest';
 
 const Index = () => (
   <div>

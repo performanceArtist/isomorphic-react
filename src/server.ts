@@ -1,4 +1,4 @@
-import '@babel/polyfill';
+import 'module-alias/register';
 import * as express from 'express';
 const morgan = require('morgan');
 const cors = require('cors');

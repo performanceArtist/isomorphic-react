@@ -4,10 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
   entry: {
-    main: [
-      '@babel/polyfill',
-      path.join(__dirname, 'src/client/main.tsx')
-    ]
+    main: ['@babel/polyfill', path.join(__dirname, 'src/client/main.tsx')]
   },
 
   resolve: {
@@ -22,7 +19,15 @@ const config = {
     path: path.resolve(__dirname, 'src/dist'),
     filename: '[name].js'
   },
-
+  devServer: {
+    port: 3000,
+    open: true,
+    publicPath: '/',
+    historyApiFallback: true,
+    proxy: {
+      '/': 'http://localhost:5000'
+    }
+  },
   module: {
     rules: [
       {

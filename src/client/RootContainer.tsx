@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import createStore from './store';
 
@@ -9,11 +9,10 @@ const preloadedState = window.__PRELOADED_STATE__;
 delete window.__PRELOADED_STATE__;
 const store = createStore({ initialState: preloadedState, browser: true });
 
-const RootContainer = (
-  <Provider store={store}>
-    <HashRouter>
+const RootContainer = (<Provider store={store}>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </Provider>
 );
 

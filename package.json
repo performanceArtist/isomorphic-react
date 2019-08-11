@@ -5,10 +5,10 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "jest",
-    "client:dev": "webpack-dev-server --hot --mode=development --config webpack.config.ts",
-    "client:build": "webpack --mode=production --config webpack.config.ts",
+    "client:dev": "webpack-dev-server --hot --mode=development --config webpack.config.dev.ts",
+    "client:build": "webpack --mode=production --config webpack.config.prod.ts",
     "server:dev": "ts-node-dev --respawn --transpileOnly -r tsconfig-paths/register index.ts",
-    "server:build": "ts-node -r tsconfig-paths/register index.ts",
+    "server:build": "tsc --project ./",
     "server:start": "node dist/server.js"
   },
   "author": "",

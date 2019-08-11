@@ -3,7 +3,6 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import { reduxIncrement } from './redux/actions';
-import { RootState } from '@redux/reducer';
 
 type OwnProps = {
   ownProp: string;
@@ -20,7 +19,7 @@ const TSTest: React.FC<Props> = ({ ownProp, reduxCounter, reduxIncrement }) => (
   </div>
 );
 
-const mapState = ({ test }: RootState) => ({
+const mapState = ({ test }: any) => ({
   reduxCounter: test.counter
 });
 

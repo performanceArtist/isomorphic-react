@@ -5,11 +5,11 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "jest",
-    "client:dev": "webpack-dev-server --mode=development --config webpack.config.ts",
+    "client:dev": "webpack-dev-server --hot --mode=development --config webpack.config.ts",
     "client:build": "webpack --mode=production --config webpack.config.ts",
     "server:dev": "ts-node-dev --respawn --transpileOnly -r tsconfig-paths/register index.ts",
-    "server:build": "tsc --project ./",
-    "server:start": "node ./src/dist/server.js"
+    "server:build": "ts-node -r tsconfig-paths/register index.ts",
+    "server:start": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@babel/register": "^7.5.5",
+    "@hot-loader/react-dom": "^16.8.6",
     "@types/express": "^4.17.0",
     "@types/node": "^12.0.10",
     "@types/react": "^16.8.22",
@@ -53,6 +54,7 @@
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "prettier": "^1.17.0",
+    "react-hot-loader": "^4.12.10",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "ts-node-dev": "^1.0.0-pre.40",

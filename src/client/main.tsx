@@ -1,24 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import { AppContainer } from 'react-hot-loader';
 
-import App from './app';
-import createStore from './store';
+import RootContainer from './RootContainer';
 
-const preloadedState = window.__PRELOADED_STATE__;
-delete window.__PRELOADED_STATE__;
-const store = createStore({ initialState: preloadedState, browser: true });
+if (module.hot) {
+  module.hot.accept('./RootContainer', () => {
+    ReactDOM.render(
+      <AppContainer>
+        <RootContainer />
+      </AppContainer>,
+      document.querySelector('.wrapper')
+    );
+  });
+}
 
-const jsx = (
-  <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
-  </Provider>
-);
-
-ReactDOM.hydrate(jsx, document.querySelector('.wrapper'));
+ReactDOM.hydrate(RootContainer, document.querySelector('.wrapper'));
 
 function importAll(resolve: any) {
   resolve.keys().forEach(resolve);

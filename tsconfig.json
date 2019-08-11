@@ -5,7 +5,7 @@
       "node",
       "webpack-env"
     ],
-    "outDir": "./dist/",
+    "outDir": "dist",
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es6",
@@ -23,8 +23,8 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true
     },
-    "exclude": [
-      "./node_modules/**/*"
+    "include": [
+      "./src"
     ]
 }
   

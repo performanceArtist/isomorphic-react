@@ -8,7 +8,7 @@ const path = require('path');
 
 import routes from '../client/routes';
 import createStore from '../client/store';
-import App from '../client/app';
+import App from '../client/App';
 import html from '../html';
 
 const router = express.Router();

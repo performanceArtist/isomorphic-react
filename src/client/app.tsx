@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './layout/Header/Header';
 import { Navigation } from './layout/Navigation/Navigation';
 import Footer from './layout/Footer/Footer';
+import { hot } from 'react-hot-loader/root';
 
 import routes from './routes';
 
@@ -40,4 +41,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default hot(App);

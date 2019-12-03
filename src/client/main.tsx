@@ -8,7 +8,7 @@ if (module.hot) {
   module.hot.accept('./RootContainer', () => {
     ReactDOM.render(
       <AppContainer>
-        <RootContainer />
+        {RootContainer}
       </AppContainer>,
       document.querySelector('.wrapper')
     );

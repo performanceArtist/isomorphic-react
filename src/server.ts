@@ -1,5 +1,4 @@
-import 'module-alias/register';
-import * as express from 'express';
+import express from 'express';
 const morgan = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');

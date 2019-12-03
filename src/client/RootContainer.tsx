@@ -9,7 +9,8 @@ const preloadedState = window.__PRELOADED_STATE__;
 delete window.__PRELOADED_STATE__;
 const store = createStore({ initialState: preloadedState, browser: true });
 
-const RootContainer = (<Provider store={store}>
+const RootContainer = (
+  <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>

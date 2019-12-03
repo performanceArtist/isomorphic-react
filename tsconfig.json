@@ -1,31 +1,35 @@
 {
-    "compilerOptions": {
-    "typeRoots": ["./node_modules/@types", "./@types"],
-    "types": [
-      "node",
-      "webpack-env"
+  "compilerOptions": {
+  "typeRoots": ["./@types", "./node_modules/@types"],
+  "types": [
+    "node",
+    "webpack-env"
+  ],
+  "rootDir": "src",
+  "outDir": "./dist",
+  "noImplicitAny": true,
+  "strict": true,
+  "strictFunctionTypes": false,
+  "module": "commonjs",
+  "target": "es6",
+  "moduleResolution": "node",
+  "baseUrl": "./src",
+  "pretty": true,
+  "paths": {
+    "@redux/*": [
+      "client/redux/*"
     ],
-    "rootDir": "src",
-    "outDir": "./dist",
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es6",
-    "moduleResolution": "node",
-    "baseUrl": "./src",
-    "paths": {
-      "@redux/*": [
-        "client/redux/*"
-      ],
-      "@components/*": [
-        "client/components/*"
-      ],
-    },
-    "jsx": "react",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true
-    },
-    "include": [
-      "./src"
+    "@components/*": [
+      "client/components/*"
     ]
+  },
+  "jsx": "react",
+  "allowJs": true,
+  "allowSyntheticDefaultImports": true,
+  "esModuleInterop": true
+  },
+  "include": [
+     "./@types", "./src/**/*"
+  ]
 }
-  
+
